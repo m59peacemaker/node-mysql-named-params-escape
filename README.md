@@ -3,11 +3,13 @@
 ## Install
 ```
 npm install mysql-named-params-escape
-
-var npEscape = require('mysql-named-params-escape');
 ```
 
 ## Usage
+
+```javascript
+var npEscape = require('mysql-named-params-escape');
+```
 
 ### Writing queries
 ```javascript

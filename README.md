@@ -13,7 +13,7 @@ var npEscape = require('mysql-named-params-escape');
 
 ### Writing queries
 ```javascript
-var query = "SELECT ::something FROM ::table WHERE ::table.::whatever = ::value";
+var query = "SELECT ::something FROM ::table WHERE ::table.::whatever = :value";
 var params = {
   something: 'title',
   table: 'foo',

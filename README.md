@@ -24,14 +24,6 @@ var params = {
 // SELECT `title` FROM `foo` WHERE `foo`.`id` = 123;
 ```
 
-### queryFormat
-
-```javascript
-connection.config.queryFormat = npEscape;
-
-connection.query(query, params);
-```
-
 ### Manual escaping
 
 ```javascript
@@ -40,14 +32,22 @@ query = npEscape(query, params);
 connection.query(query);
 ```
 
+### Setting queryFormat
+
+```javascript
+connection.config.queryFormat = npEscape;
+
+connection.query(query, params);
+```
+
 ### Parameters
 
 #### query
 
 Type: `String`
 
-The string of MYSQL code to be escaped.
-`::` followed by a word denotes an identifier to be escaped.
+The string of MYSQL code to be escaped.<br>
+`::` followed by a word denotes an identifier to be escaped.<br>
 `:` followed by a word denotes a value to be escaped.
 
 #### params

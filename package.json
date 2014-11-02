@@ -1,0 +1,24 @@
+{
+  "name": "mysql-named-params-escape",
+  "version": "1.0.0",
+  "description": "Custom query format for named parameters in node-mysql.",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape test/**/*.js"
+  },
+  "keywords": [
+    "mysql",
+    "query",
+    "named",
+    "parameters",
+    "params"
+  ],
+  "author": "Johnny Hauser",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.5.2"
+  },
+  "devDependencies": {
+    "tape": "^3.0.1"
+  }
+}

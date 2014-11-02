@@ -1,5 +1,5 @@
 var test = require('tape');
-var npEscape = require(__dirname+'/../');
+var npEscape = require('../');
 
 test('inserts named parameters for values', function(t) {
   t.plan(1);
